@@ -58,7 +58,9 @@ Refer "output_screenshot.jpg"  to know how the output file appears.
   If they are Type-B links, then we use the function "get_all_links" to all .pdf link from within the page. We use function "findAll" to scrape off the html content and obtain     just the links from each page. 
   From this point, we can treat these links as Type-A links.
    
-- Now we iterate over all the rows present in the "data.csv" file and access row[0](this is the url present in each line). We run the above logic on each link which will be       either of type-A or type-B.
-- Next, we append the cooresponding dictionary as and when each row is encountered. All the dictionaries are then appended to list[] which contains all the dictionaries.
-- Lastly, we create a json object named "json_object"
-  Then, we create a "output.json" file. This file is used to store the output of the above code, ie., we store the list of dictionaries "list[]" in this file.
+- Now we iterate over all the rows present in the "data.csv" file and access row[0](this is the url present in each line). We run the above logic on each link which will be       either of type-A or type-B. 
+- We use ".lxmi" parsing technique to parse text from pdf files.
+- In order to convert the marathi characters to english, we may use an encoding function.
+
+- Next, we append the corresponding dictionary as and when each row is encountered. All the dictionaries are then appended to list[] which contains all the dictionaries.
+- Lastly, we create a json object named "json_object". Then, we create a "output.json" file. This file is used to store the output of the above code, ie., we store the list of     dictionaries "list[]" in this file.
