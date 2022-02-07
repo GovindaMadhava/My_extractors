@@ -48,7 +48,7 @@ Refer "output_screenshot.jpg"  to know how the output file appears.
 
 -> Logic : Once all the required modules are impported, we proceed to the logic of the code to solve the given task.
 
-- We first convert the given google sheet document into a csv file(data.csv). We will be working on this file from this point onwards due to its compatibility with jupyter notebook.
+- We first convert the given google sheet document into a csv file "Data Engineer Task - Data Engineer Task.csv". We will be working on this file from this point onwards due to its compatibility with jupyter notebook.
 - Defining a function "download_file" which take a url as an argument and downloads the pdf file into the same folder as the jupyter notebook. We will use this funciton later to download the pdfs into the folder to read them.
 - Defining the structure of the dictionary as expected in the output
   
